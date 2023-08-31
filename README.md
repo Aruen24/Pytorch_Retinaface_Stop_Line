@@ -1,23 +1,30 @@
-#train
+# Pytorch_Retinaface_Stop_Line
+## train
+```shell
 CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --network resnet50 or
 CUDA_VISIBLE_DEVICES=0 python train.py --network mobile0.25
+```
 
-#test
+## test
+```shell
 python detect.py --trained_model ./weights/mobilenet0.25_epoch_15.pth  --network mobile0.25 --input test.png
 python detect.py --trained_model ./weights_stop_line_noupsample_0105/mobilenet0.25_epoch_245.pth  --network mobile0.25 --input test.png
 CUDA_VISIBLE_DEVICES=3 python detect_color.py --trained_model ./weights_stop_line_color_0214/mobilenet0.25_Final.pth  --network mobile0.25 --input test.png
+```
 
-#test widerface val
+## test widerface val
+```shell
 #Generate txt file
 python test_widerface.py --trained_model weight_file --network mobile0.25 or resnet50
 #Evaluate txt results. Demo come from Here
 cd ./widerface_evaluate
 python setup.py build_ext --inplace
 python evaluation.py
+```
 
 
-
-#训练数据
+## 训练数据
+```shell
 #x y w h label0 x1 y1 x2 y2 x3 y3 x4 y4 label1
 #0 312 638 98 1 637 316 2 319 1 405 636 406 1
 #最后一位用作颜色检测 [bg=0, right color=1, wrong color=2]
@@ -52,3 +59,4 @@ python evaluation.py
 
 $ wget https://raw.githubusercontent.com/d246810g2000/tensorrt/main/onnx_edit.py
 $ python3 onnx_edit.py StopLineDetector_noupsample_sim.onnx stop_line_sim.onnx --outputs '476[1,4,80,80], 488[1,4,40,40], 500[1,4,20,20], 439[1,8,80,80], 451[1,8,40,40], 463[1,8,20,20], 513[1,16,80,80], 525[1,16,40,40], 537[1,16,20,20]'
+```
