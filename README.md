@@ -63,5 +63,6 @@ $ python3 onnx_edit.py StopLineDetector_noupsample_sim.onnx stop_line_sim.onnx -
 
 
 ![1386_1](https://github.com/Aruen24/Pytorch_Retinaface_Stop_Line/assets/27750891/e6123daf-c94a-44fa-9c33-918db07db52d)
-![1639730554_Blur_1](https://github.com/Aruen24/Pytorch_Retinaface_Stop_Line/assets/27750891/2472b596-dca2-4b2d-b87e-5a3b7212dbb3)
+![1639730557_horizon_1](https://github.com/Aruen24/Pytorch_Retinaface_Stop_Line/assets/27750891/413be330-8027-4c72-8a99-a8b39958fedd)
+
 
