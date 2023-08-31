@@ -60,3 +60,8 @@ python evaluation.py
 $ wget https://raw.githubusercontent.com/d246810g2000/tensorrt/main/onnx_edit.py
 $ python3 onnx_edit.py StopLineDetector_noupsample_sim.onnx stop_line_sim.onnx --outputs '476[1,4,80,80], 488[1,4,40,40], 500[1,4,20,20], 439[1,8,80,80], 451[1,8,40,40], 463[1,8,20,20], 513[1,16,80,80], 525[1,16,40,40], 537[1,16,20,20]'
 ```
+
+
+![1639730636](https://github.com/Aruen24/Pytorch_Retinaface_Stop_Line/assets/27750891/590b2ee4-43e1-435b-bcad-b7a0fa2c1c82)
+
+![1639730636_1](https://github.com/Aruen24/Pytorch_Retinaface_Stop_Line/assets/27750891/4d7ea965-84ed-4685-8547-e9dbfead52fb)
